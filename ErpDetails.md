@@ -12,7 +12,6 @@ ERP systems are designed around a single, defined data structure (schema) that t
 
 ---
 
-
 A key ERP principle is the central collection of data for wide distribution. Instead of several standalone databases with an endless inventory of disconnected spreadsheets, ERP systems bring order to chaos so that all users—from the CEO to accounts payable clerks—can create, store, and use the same data derived through common processes. With a secure and centralized data repository, everyone in the organization can be confident that data is correct, up-to-date, and complete. Data integrity is assured for every task performed throughout the organization, from a quarterly financial statement to a single outstanding receivables report, without relying on error-prone spreadsheets.
 
 #### Types of ERP
@@ -24,4 +23,17 @@ A key ERP principle is the central collection of data for wide distribution. Ins
 </ul>
 
 ***Note*** --- we should have Master table of every possible table in a centralised database so that we can build ERP.
+
+#### Details ERP
+
+##### Basic Company details
+
+1. First name , last name
+2. Company name
+3. Email
+4. Phone number
+5. Country
+6. Language
+7. Company Sector
+8. Employee size
 
