@@ -53,7 +53,7 @@ B. Walk-in with Prescription
 
 C. Self-requested  (No Prescription Needed)
 
-* Some tests (like blood sugar, cholesterol, vitamin levels, routine blood panel, pregnancy test, eye checkup, etc.) do ​**not require prescription**​.
+* Some tests (like blood sugar, cholesterol, vitamin levels, routine blood panel, pregnancy test, eye checkup, etc.) do **not require prescription**.
 * Patient can directly choose these tests from the catalog.
 
 ### Booking Flow for Patients
@@ -74,6 +74,68 @@ b. For Already registered Patient
 * Create a new appointment there with information required
 * Generate new booking ID on same patient ID
 * Payment method will be same either in two parts or full payment
+
+### Patient Information (if not registered)
+
+1. Tables
+
+```
+Patients (Master)
+Patient Contacts
+Pre Medical History
+Appointments
+Patient Documents
+Insurance information
+```
+
+1. Patients (patients)
+   
+   * ID
+   * Patient ID (auto generated)
+   * First Name
+   * Last name
+   * age
+   * gender
+   * date-of-birth
+2. Patient Test
+   
+   * id
+   * patient_id
+   * test_id
+3. Patient Contacts (patient-contacts)
+   
+   * Id
+   * patient_id
+   * is_primary
+   * phone_number
+   * emergency_contact
+   * emergency_contact _relation
+   * emergency_contact_name
+4. Pre Medical History
+   
+   * Id
+   * patient_id
+   * diease_name
+   * diease_type
+   * diease_duration
+   * is_medication_going_on
+5. Appointments
+   
+   * id
+   * patient_id
+   * booking_id (auto generated)
+   * booking_date_time
+   * appointed_date_time
+   * is_rescheuled
+6. Patient Documents
+   
+   * id
+   * patient_id
+   * appointment_id
+   * document_type
+   * file
+
+### Payment Slip Generation
 
 ### Report Generation Process
 
